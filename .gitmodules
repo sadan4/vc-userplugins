@@ -4,3 +4,6 @@
 [submodule "emojiOnMouseUp"]
 	path = emojiOnMouseUp
 	url = git@github.com:sadan4/emojiOnMouseUp.git
+[submodule "plugin-customFolderIcons"]
+	path = plugin-customFolderIcons
+	url = git@github.com:sadan4/plugin-customFolderIcons.git
