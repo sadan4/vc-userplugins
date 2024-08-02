@@ -1,0 +1,3 @@
+[submodule "vc-betterconsolejanitor"]
+	path = vc-betterconsolejanitor
+	url = git@github.com:sadan4/vc-betterconsolejanitor.git
