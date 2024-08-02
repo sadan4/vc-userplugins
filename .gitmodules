@@ -13,3 +13,6 @@
 [submodule "urbanSearch"]
 	path = urbanSearch
 	url = git@github.com:sadan4/urbanSearch.git
+[submodule "vencord-steamStatusSync"]
+	path = vencord-steamStatusSync
+	url = https://github.com/hauntii/vencord-steamStatusSync
