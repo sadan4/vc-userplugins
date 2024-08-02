@@ -1,0 +1,52 @@
+#!/usr/bin/env bash
+set -eo pipefail
+set -x
+
+SEPRATE_REPO=true
+REPO_PREFIX="vc-"
+REPO_SUFFIX=""
+# https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository#searching-github-by-license-type
+REPO_DESCRIPTION="A discord plugin"
+PRIVATE=false
+REMOTE_NAME="origin"
+
+echoe() {
+    >&2 echo "$1"
+}
+if [[ -z $1 ]] ;then
+    echo you need to provide a plugin name
+    exit 1;
+fi
+# this is perfect in every way
+cd -- "$(dirname -- "${BASH_SOURCE[0]}")"
+cd ../../..
+
+
+pluginDir="src/userplugins/$1"
+mkdir $pluginDir && cd $pluginDir
+pwd
+git init || echoe "could not init git repo" || exit 1
+cp ../_scripts/template.tsx ./index.tsx
+cp ../_scripts/readme.md ./README.md
+# transformed title
+TT="$(echo $1 | perl -pe "s/(.)(.*)/\U\1\E\2/")"
+perl -i -pe "s/PLUGIN_NAME/$TT/" ./README.md
+perl -i -pe "s/PLUGIN_NAME/$TT/" ./index.tsx
+git add -- ./index.tsx
+git add -- ./README.md
+
+git commit -m "create plugin ${TT}" || echoe "Could not make git commit"
+
+if gh --version > /dev/null || false; then
+    repoName="${REPO_PREFIX}${1}${REPO_SUFFIX}"
+    args=" --push --source . --remote ${REMOTE_NAME}"
+    if $PRIVATE; then
+        args+=" --private"
+    else
+        args+=" --public"
+    fi
+    echo "Args are: $args"
+    gh repo create $repoName $args || echoe "failed to create git repo" || exit 1
+else
+    echo "You do not have the GHCLI installed, please install it"
+fi
