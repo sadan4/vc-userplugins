@@ -16,3 +16,6 @@
 [submodule "vencord-steamStatusSync"]
 	path = vencord-steamStatusSync
 	url = https://github.com/hauntii/vencord-steamStatusSync
+[submodule "DiscordColorways-VencordUserplugin"]
+	path = DiscordColorways-VencordUserplugin
+	url = https://github.com/DaBluLite/DiscordColorways-VencordUserplugin
