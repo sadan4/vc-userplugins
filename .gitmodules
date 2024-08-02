@@ -10,3 +10,6 @@
 [submodule "plugin-unitConverter"]
 	path = plugin-unitConverter
 	url = git@github.com:sadan4/plugin-unitConverter.git
+[submodule "urbanSearch"]
+	path = urbanSearch
+	url = git@github.com:sadan4/urbanSearch.git
