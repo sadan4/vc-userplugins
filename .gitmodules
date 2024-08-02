@@ -1,3 +1,6 @@
 [submodule "vc-betterconsolejanitor"]
 	path = vc-betterconsolejanitor
 	url = git@github.com:sadan4/vc-betterconsolejanitor.git
+[submodule "emojiOnMouseUp"]
+	path = emojiOnMouseUp
+	url = git@github.com:sadan4/emojiOnMouseUp.git
