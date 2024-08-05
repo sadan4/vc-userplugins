@@ -19,3 +19,6 @@
 [submodule "DiscordColorways-VencordUserplugin"]
 	path = DiscordColorways-VencordUserplugin
 	url = https://github.com/DaBluLite/DiscordColorways-VencordUserplugin
+[submodule "FriendCodes"]
+	path = FriendCodes
+	url = https://github.com/Domis-Vencord-Plugins/FriendCodes
