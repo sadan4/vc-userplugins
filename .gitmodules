@@ -25,3 +25,6 @@
 [submodule "ctrlEnterSave"]
 	path = ctrlEnterSave
 	url = git@github.com:sadan4/vc-ctrlEnterSave.git
+[submodule "asd123"]
+	path = asd123
+	url = git@github.com:sadan4/vc-asd123.git

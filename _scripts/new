@@ -50,3 +50,7 @@ if gh --version > /dev/null || false; then
 else
     echo "You do not have the GHCLI installed, please install it"
 fi
+REMOTE_URL="$(git remote get-url -- origin)"
+SUBMODULE_NAME="$(pwd | perl -pe "s/.*(\/[^\/]*$)/.\1/")"
+cd ..
+git submodule add $REMOTE_URL $SUBMODULE_NAME
