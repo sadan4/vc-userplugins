@@ -22,3 +22,6 @@
 [submodule "FriendCodes"]
 	path = FriendCodes
 	url = https://github.com/Domis-Vencord-Plugins/FriendCodes
+[submodule "ctrlEnterSave"]
+	path = ctrlEnterSave
+	url = git@github.com:sadan4/vc-ctrlEnterSave.git
