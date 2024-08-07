@@ -28,3 +28,6 @@
 [submodule "asd123"]
 	path = asd123
 	url = git@github.com:sadan4/vc-asd123.git
+[submodule "textProfileView"]
+	path = textProfileView
+	url = git@github.com:sadan4/vc-fullUserInChatbox.git
