@@ -25,9 +25,15 @@
 [submodule "ctrlEnterSave"]
 	path = ctrlEnterSave
 	url = git@github.com:sadan4/vc-ctrlEnterSave.git
-[submodule "textProfileView"]
-	path = textProfileView
-	url = git@github.com:sadan4/vc-fullUserInChatbox.git
-[submodule "vc-userDevTools"]
-	path = vc-userDevTools
+[submodule "copyStatusUrls"]
+	path = copyStatusUrls
+	url = git@github.com:sadan4/vc-copyStatusUrls.git
+[submodule "copyFolderId"]
+	path = copyFolderId
+	url = git@github.com:sadan4/vc-copyFolderId.git
+[submodule "sentFromMyUname"]
+	path = sentFromMyUname
+	url = https://git.nin0.dev/userplugins/sentFromMyUname.git
+[submodule "userDevTools"]
+	path = userDevTools
 	url = git@github.com:sadan4/vc-userDevTools.git
