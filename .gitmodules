@@ -34,6 +34,3 @@
 [submodule "userDevTools"]
 	path = userDevTools
 	url = git@github.com:sadan4/vc-userDevTools.git
-[submodule "iconViewer"]
-	path = iconViewer
-	url = https://github.com/coldcord/iconViewer.git
